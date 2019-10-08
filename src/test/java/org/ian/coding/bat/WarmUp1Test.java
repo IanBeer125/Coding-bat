@@ -56,5 +56,19 @@ public class WarmUp1Test {
         assertThat(underTest.sumDouble(3,2), is(5));
     }
 
+    @Test
+    public void shouldDiff21None() throws Exception {
+        assertThat(underTest.diff21(21), is(0));
+    }
+    
+    @Test
+    public void shouldDiff212() throws Exception {
+        assertThat(underTest.diff21(19), is(2));
+    }
+    
+    @Test
+    public void shouldDiff21Double() throws Exception {
+        assertThat(underTest.diff21(23), is(4));
+    }
 
 }
