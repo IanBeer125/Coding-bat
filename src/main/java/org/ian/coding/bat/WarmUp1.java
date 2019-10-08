@@ -54,7 +54,9 @@ public class WarmUp1 {
         if (n == twentyOne) {
             return 0;
         } else if (n < twentyOne) {
-
+            return twentyOne - n;
+        } else {
+            return (n - twentyOne) * 2;
         }
     }
 }
