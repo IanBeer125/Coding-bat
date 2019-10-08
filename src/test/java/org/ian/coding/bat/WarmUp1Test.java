@@ -3,6 +3,7 @@ package org.ian.coding.bat;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
 public class WarmUp1Test {
@@ -42,6 +43,18 @@ public class WarmUp1Test {
         assertFalse(underTest.monkeyTrouble(true, false));
     }
 
+    @Test
+    public void shouldSumDoubleDouble() throws Exception {
+        assertThat(underTest.sumDouble(2,2), is(8));
+    }
+    @Test
+    public void shouldSumDoubleSum() throws Exception {
+        assertThat(underTest.sumDouble(1,2), is(3));
+    }
+    @Test
+    public void shouldSumDoubleSum2() throws Exception {
+        assertThat(underTest.sumDouble(3,2), is(5));
+    }
 
 
 }
