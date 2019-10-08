@@ -28,6 +28,20 @@ public class WarmUp1Test {
         assertFalse(underTest.sleepIn(true, false));
     }
 
+    @Test
+    public void shouldMonkeyTrouble2Smiles() throws Exception {
+        assertTrue(underTest.monkeyTrouble(true, true));
+    }
+
+    @Test
+    public void shouldMonkeyTrouble2Sad() throws Exception {
+        assertTrue(underTest.monkeyTrouble(false, false));
+    }
+    @Test
+    public void shouldNotonkeyTrouble1Smile() throws Exception {
+        assertFalse(underTest.monkeyTrouble(true, false));
+    }
+
 
 
 }
