@@ -47,4 +47,15 @@ public class Functional1Test {
         assertThat(ret.get(2), is(36));
     }
 
+    @Test
+    public void shouldAddStar() throws Exception {
+        List<String> strings = new ArrayList<>();
+        strings.add("add star");
+
+        List<String> ret = underTest.addStar(strings);
+
+        assertThat(ret.get(0), is("add*"));
+        assertThat(ret.get(1), is("start*"));
+    }
+
 }

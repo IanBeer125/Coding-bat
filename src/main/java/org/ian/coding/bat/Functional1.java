@@ -16,4 +16,10 @@ public class Functional1 {
 
         return nums.stream().map(i -> i*i).collect(Collectors.toList());
     }
+
+    public List<String> addStar(List<String> strings) {
+
+        return null;
+
+    }
 }
