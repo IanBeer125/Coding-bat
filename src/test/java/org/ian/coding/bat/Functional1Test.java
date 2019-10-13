@@ -50,12 +50,13 @@ public class Functional1Test {
     @Test
     public void shouldAddStar() throws Exception {
         List<String> strings = new ArrayList<>();
-        strings.add("add star");
+        strings.add("add");
+        strings.add("star");
 
         List<String> ret = underTest.addStar(strings);
 
         assertThat(ret.get(0), is("add*"));
-        assertThat(ret.get(1), is("start*"));
+        assertThat(ret.get(1), is("star*"));
     }
 
 }

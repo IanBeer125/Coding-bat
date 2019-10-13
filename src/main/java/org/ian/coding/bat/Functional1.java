@@ -19,7 +19,7 @@ public class Functional1 {
 
     public List<String> addStar(List<String> strings) {
 
-        return null;
+        return strings.stream().map(s -> s+"*").collect(Collectors.toList());
 
     }
 }
