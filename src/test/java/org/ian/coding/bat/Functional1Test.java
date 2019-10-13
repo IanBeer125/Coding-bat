@@ -42,9 +42,9 @@ public class Functional1Test {
 
         List<Integer> ret = underTest.square(nums);
 
-        assertThat(nums.get(0), is(4));
-        assertThat(nums.get(1), is(16));
-        assertThat(nums.get(2), is(36));
+        assertThat(ret.get(0), is(4));
+        assertThat(ret.get(1), is(16));
+        assertThat(ret.get(2), is(36));
     }
 
 }

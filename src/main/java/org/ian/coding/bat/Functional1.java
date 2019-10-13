@@ -14,6 +14,6 @@ public class Functional1 {
 
     public List<Integer> square(List<Integer> nums) {
 
-        return null;
+        return nums.stream().map(i -> i*i).collect(Collectors.toList());
     }
 }
