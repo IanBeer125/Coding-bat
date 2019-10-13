@@ -11,4 +11,9 @@ public class Functional1 {
 
         return ret;
     }
+
+    public List<Integer> square(List<Integer> nums) {
+
+        return null;
+    }
 }

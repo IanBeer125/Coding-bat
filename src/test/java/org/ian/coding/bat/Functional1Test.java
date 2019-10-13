@@ -33,4 +33,18 @@ public class Functional1Test {
 
     }
 
+    @Test
+    public void shouldSquare() throws Exception {
+        List<Integer> nums = new ArrayList<>();
+        nums.add(2);
+        nums.add(4);
+        nums.add(6);
+
+        List<Integer> ret = underTest.square(nums);
+
+        assertThat(nums.get(0), is(4));
+        assertThat(nums.get(1), is(16));
+        assertThat(nums.get(2), is(36));
+    }
+
 }
