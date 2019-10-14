@@ -66,8 +66,8 @@ public class Functional1Test {
         List<String> ret = underTest.copies3(strings);
 
         assertThat(ret.get(0), is("aaaaaa"));
-        assertThat(ret.get(0), is("bbbbbb"));
-        assertThat(ret.get(0), is("cccccc"));
+        assertThat(ret.get(1), is("bbbbbb"));
+        assertThat(ret.get(2), is("cccccc"));
     }
 
 }
