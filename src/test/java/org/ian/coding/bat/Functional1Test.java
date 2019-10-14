@@ -81,4 +81,15 @@ public class Functional1Test {
         assertThat(ret.get(2), is("ycy"));
     }
 
+    @Test
+    public void shouldMath1() throws Exception {
+        List<Integer> ints = List.of(2,3,4);
+
+        List<Integer> ret = underTest.math1(ints);
+
+        assertThat(ret.get(0), is(30));
+        assertThat(ret.get(1), is(40));
+        assertThat(ret.get(2), is(50));
+    }
+
 }
