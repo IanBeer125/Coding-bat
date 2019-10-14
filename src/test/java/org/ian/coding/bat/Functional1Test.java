@@ -70,4 +70,15 @@ public class Functional1Test {
         assertThat(ret.get(2), is("cccccc"));
     }
 
+    @Test
+    public void shouldMoreY() throws Exception {
+        List<String> strings = List.of("a","b","c");
+
+        List<String> ret = underTest.moreY(strings);
+
+        assertThat(ret.get(0), is("yay"));
+        assertThat(ret.get(1), is("yby"));
+        assertThat(ret.get(2), is("ycy"));
+    }
+
 }
