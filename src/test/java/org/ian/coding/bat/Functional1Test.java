@@ -59,4 +59,15 @@ public class Functional1Test {
         assertThat(ret.get(1), is("star*"));
     }
 
+    @Test
+    public void shouldCopies3() throws Exception {
+        List<String> strings = List.of("aa","bb","cc");
+
+        List<String> ret = underTest.copies3(strings);
+
+        assertThat(ret.get(0), is("aaaaaa"));
+        assertThat(ret.get(0), is("bbbbbb"));
+        assertThat(ret.get(0), is("cccccc"));
+    }
+
 }
