@@ -34,7 +34,7 @@ public class Functional2 {
 
     public List<String> noYY(List<String> strings) {
         return strings.stream().map(s -> s.concat("y"))
-                .filter(s -> s.contains("yy"))
+                .filter(s -> !s.contains("yy"))
                 .collect(Collectors.toList());
     }
 }
