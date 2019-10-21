@@ -117,7 +117,7 @@ public class Functional1Test {
     public void shouldNox() throws Exception {
         List<String> strings = List.of("ax", "oxo", "exxon");
 
-        List<String> ret = underTest.lower(strings);
+        List<String> ret = underTest.noX(strings);
 
         assertThat(ret.get(0), is("a"));
         assertThat(ret.get(1), is("oo"));
