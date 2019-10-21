@@ -37,4 +37,8 @@ public class Functional2 {
                 .filter(s -> !s.contains("yy"))
                 .collect(Collectors.toList());
     }
+
+    public List<Integer> two2(List<Integer> nums) {
+
+    }
 }

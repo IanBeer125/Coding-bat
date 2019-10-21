@@ -98,5 +98,15 @@ public class Functional2Test {
 
     }
 
+    @Test
+    public void shouldTwo2() throws Exception {
+        List<Integer> nums = List.of(2,6,11);
+
+        List<Integer> ret = underTest.two2(nums);
+
+        assertThat(ret.size(), is(1));
+        assertThat(ret.get(0), is(4));
+    }
+
 
 }
