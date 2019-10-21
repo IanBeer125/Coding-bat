@@ -106,6 +106,9 @@ public class Recursion1Test {
     public void shouldCountHi() throws Exception {
         String str = "xhihixxhi";
 
+        System.out.println(str.substring(1, str.length()));
+
+
         int ret = underTest.countHi(str);
         assertThat(ret, is(3));
     }
