@@ -113,4 +113,15 @@ public class Functional1Test {
         assertThat(ret.get(1), is("hello"));
     }
 
+    @Test
+    public void shouldNox() throws Exception {
+        List<String> strings = List.of("ax", "oxo", "exxon");
+
+        List<String> ret = underTest.lower(strings);
+
+        assertThat(ret.get(0), is("a"));
+        assertThat(ret.get(1), is("oo"));
+        assertThat(ret.get(2), is("eon"));
+    }
+
 }
