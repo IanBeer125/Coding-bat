@@ -82,4 +82,14 @@ public class Recursion1Test {
 
         assertThat(ret, is(4));
     }
+
+    @Test
+    public void shouldPowerN() throws Exception {
+        int base = 3;
+        int pow = 3;
+
+        int ret = underTest.powerN(base, pow);
+
+        assertThat(ret, is(27));
+    }
 }
