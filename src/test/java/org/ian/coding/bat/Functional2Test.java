@@ -110,7 +110,11 @@ public class Functional2Test {
 
     @Test
     public void shouldSquar56() throws Exception {
-        List<Integer> nums = List.of(3,1,4);
+        List<Integer> nums = new ArrayList<>();
+        nums.add(3);
+        nums.add(1);
+        nums.add(4);
+
 
         List<Integer> ret = underTest.square56(nums);
 
