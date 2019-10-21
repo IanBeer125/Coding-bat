@@ -31,4 +31,10 @@ public class Functional2 {
     public List<String> no34(List<String> strings) {
         return strings.stream().filter(s -> s.length() != 3 && s.length() !=4).collect(Collectors.toList());
     }
+
+    public List<String> noYY(List<String> strings) {
+        return strings.stream().map(s -> s.concat("y"))
+                .filter(s -> s.contains("yy"))
+                .collect(Collectors.toList());
+    }
 }

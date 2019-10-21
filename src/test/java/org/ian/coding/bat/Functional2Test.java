@@ -81,6 +81,22 @@ public class Functional2Test {
 
         assertThat(ret.size()  , is(3));
     }
+    
+    @Test
+    public void shouldNoYY() throws Exception {
+        List<String> strings = new ArrayList();
+        strings.add("aaaa");
+        strings.add("bbby");
+        strings.add("yaz");
+
+        List<String> ret = underTest.noYY(strings);
+
+        assertThat(ret.size(), is(2));
+        assertThat(ret.get(0), is("aaay"));
+
+        assertThat(ret.get(3), is("yazy"));
+
+    }
 
 
 }
