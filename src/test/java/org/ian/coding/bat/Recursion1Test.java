@@ -76,7 +76,7 @@ public class Recursion1Test {
 
     @Test
     public void shouldCount8() throws Exception {
-        int num = 88188;
+        int num = 8818;
 
         int ret = underTest.count8(num);
 
