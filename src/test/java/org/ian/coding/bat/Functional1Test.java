@@ -105,7 +105,12 @@ public class Functional1Test {
 
     @Test
     public void shouldLower() throws Exception {
+        List<String> strings = List.of("HI", "HELLO");
 
+        List<String> ret = underTest.lower(strings);
+
+        assertThat(ret.get(0), is("hi"));
+        assertThat(ret.get(1), is("hello"));
     }
 
 }
