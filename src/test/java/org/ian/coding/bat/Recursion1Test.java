@@ -209,4 +209,13 @@ public class Recursion1Test {
         assertThat(ret, is(1));
 
     }
+
+    @Test
+    public void shouldStringClean() throws Exception {
+        String str = "yyyxxxxa";
+
+        String ret = underTest.stringClean(str);
+
+        assertThat(ret, is("yxa"));
+    }
 }
