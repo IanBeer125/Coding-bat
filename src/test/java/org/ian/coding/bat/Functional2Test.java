@@ -108,5 +108,14 @@ public class Functional2Test {
         assertThat(ret.get(0), is(4));
     }
 
+    @Test
+    public void shouldSquar56() throws Exception {
+        List<Integer> nums = List.of(3,1,4);
+
+        List<Integer> ret = underTest.square56(nums);
+
+        assertThat(ret.size(), is(2));
+    }
+
 
 }

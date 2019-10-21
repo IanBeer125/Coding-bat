@@ -43,4 +43,8 @@ public class Functional2 {
                 .filter(i -> i % 10 != 2)
                 .collect(Collectors.toList());
     }
+
+    public List<Integer> square56(List<Integer> nums) {
+
+    }
 }
