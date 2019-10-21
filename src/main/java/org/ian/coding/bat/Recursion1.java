@@ -103,4 +103,8 @@ public class Recursion1 {
         return countX(str.substring(0, str.length() -1));
     }
 
+    public int countHi(String str) {
+
+    }
+
 }

@@ -101,4 +101,12 @@ public class Recursion1Test {
 
         assertThat(ret, is(5));
     }
+
+    @Test
+    public void shouldCountHi() throws Exception {
+        String str = "xhihixxhi";
+
+        int ret = underTest.countHi(str);
+        assertThat(ret, is(3));
+    }
 }
