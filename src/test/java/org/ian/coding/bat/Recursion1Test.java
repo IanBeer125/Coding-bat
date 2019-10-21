@@ -92,4 +92,13 @@ public class Recursion1Test {
 
         assertThat(ret, is(27));
     }
+
+    @Test
+    public void shouldCountx() throws Exception {
+        String string = "xxxbbxx";
+
+        int ret = underTest.countX(string);
+
+        assertThat(ret, is(5));
+    }
 }
