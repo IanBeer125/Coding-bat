@@ -40,6 +40,6 @@ public class Functional1 {
     }
 
     public List<String> lower(List<String> strings) {
-
+        return strings.stream().map(s -> s.toLowerCase()).collect(Collectors.toList());
     }
 }
