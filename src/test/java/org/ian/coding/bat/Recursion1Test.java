@@ -190,4 +190,14 @@ public class Recursion1Test {
 
         assertThat(ret, is("ersxx"));
     }
+
+    @Test
+    public void shouldCountPairs() throws Exception {
+        String str = "axaxa";
+
+        int ret = underTest.countPairs(str);
+
+        assertThat(ret, is(3));
+
+    }
 }
