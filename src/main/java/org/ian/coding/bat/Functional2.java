@@ -39,6 +39,8 @@ public class Functional2 {
     }
 
     public List<Integer> two2(List<Integer> nums) {
-
+        return nums.stream().map(i -> i*2)
+                .filter(i -> i % 10 != 2)
+                .collect(Collectors.toList());
     }
 }
