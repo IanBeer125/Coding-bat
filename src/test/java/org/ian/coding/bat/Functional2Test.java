@@ -25,5 +25,14 @@ public class Functional2Test {
         assertThat(ret.size(), is(3));
     }
 
+    @Test
+    public void shouldNo9() throws Exception {
+        List<Integer> nums = List.of(9, 11, 19, 29, 23);
+
+        List<Integer> ret = underTest.no9(nums);
+
+        assertThat(ret.size(), is(2));
+    }
+
 
 }
