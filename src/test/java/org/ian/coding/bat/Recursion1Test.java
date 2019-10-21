@@ -192,12 +192,11 @@ public class Recursion1Test {
     }
 
     @Test
-    public void shouldCountPairs() throws Exception {
-        String str = "axaxa";
+    public void shouldCountABC() throws Exception {
+        String str = "abc";
 
-        int ret = underTest.countPairs(str);
+        int ret = underTest.countAbc(str);
 
-        assertThat(ret, is(3));
-
+        assertThat(ret, is(1));
     }
 }
