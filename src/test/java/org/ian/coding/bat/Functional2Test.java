@@ -3,6 +3,7 @@ package org.ian.coding.bat;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.hamcrest.core.Is.is;
@@ -32,6 +33,39 @@ public class Functional2Test {
         List<Integer> ret = underTest.no9(nums);
 
         assertThat(ret.size(), is(2));
+    }
+
+    @Test
+    public void shouldNoTeen() throws Exception {
+        List<Integer> nums = List.of(1,12,14,17, 20, 21);
+
+        List<Integer> ret = underTest.noTeen(nums);
+
+        assertThat(ret.size(), is(4));
+    }
+
+    @Test
+    public void shouldNoz() throws Exception {
+        List<String> strings = new ArrayList();
+        strings.add("aaa");
+        strings.add("bbb");
+        strings.add("aze");
+
+        List<String> ret = underTest.noZ(strings);
+
+        assertThat(ret.size(), is(2));
+    }
+
+    @Test
+    public void shouldNoLong() throws Exception {
+        List<String> strings = new ArrayList();
+        strings.add("aaaa");
+        strings.add("bbb");
+        strings.add("azea");
+
+        List<String> ret = underTest.noLong(strings);
+
+        assertThat(ret.size(), is(1));
     }
 
 

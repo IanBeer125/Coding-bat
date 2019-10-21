@@ -14,6 +14,16 @@ public class Functional2 {
     }
 
     public List<Integer> noTeen(List<Integer> nums) {
+        return nums.stream().filter(i -> i < 13 || i >19)
+                .collect(Collectors.toList());
+    }
+
+    public List<String> noZ(List<String> strings) {
+        strings.removeIf(s -> s.contains("z"));
+        return strings;
+    }
+
+    public List<String> noLong(List<String> strings) {
 
     }
 }
