@@ -194,4 +194,8 @@ public class Recursion1 {
         return str.charAt(0)+"*"+ allStar(str.substring(1));
     }
 
+    public String pairStar(String str) {
+
+    }
+
 }

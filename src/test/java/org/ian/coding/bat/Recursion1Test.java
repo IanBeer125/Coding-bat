@@ -173,4 +173,12 @@ public class Recursion1Test {
 
         assertThat(ret, is("h*e*l*l*o"));
     }
+
+    @Test
+    public void shouldPairStar() throws Exception {
+        String str = "hello";
+        String ret = underTest.pairStar(str);
+
+        assertThat(ret, is("hel*lo"));
+    }
 }
