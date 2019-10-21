@@ -23,5 +23,13 @@ public class Recursion1Test {
         assertThat(ret, is(6));
     }
 
+    @Test
+    public void shouldBunnyEars() throws Exception {
+        int num = 3;
+        int ret = underTest.bunnyEars(num);
+
+        assertThat(ret, is(6));
+    }
+
 
 }
