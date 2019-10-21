@@ -138,4 +138,11 @@ public class Recursion1Test {
 
         assertThat(ret, is("ab"));
     }
+
+    @Test
+    public void shouldArray6() throws Exception {
+        int[] ints = new int[]{1,6,4};
+
+        assertTrue(underTest.array6(ints, 0));
+    }
 }
