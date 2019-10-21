@@ -68,5 +68,19 @@ public class Functional2Test {
         assertThat(ret.size(), is(1));
     }
 
+    @Test
+    public void shouldNo34() throws Exception {
+        List<String> strings = new ArrayList();
+        strings.add("aaaa");
+        strings.add("bbb");
+        strings.add("az");
+        strings.add("a");
+        strings.add("apple");
+
+        List<String> ret = underTest.no34(strings);
+
+        assertThat(ret.size()  , is(3));
+    }
+
 
 }
