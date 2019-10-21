@@ -199,4 +199,14 @@ public class Recursion1Test {
 
         assertThat(ret, is(1));
     }
+
+    @Test
+    public void shouldCount11() throws Exception {
+        String str = "111";
+
+        int ret = underTest.count11(str);
+
+        assertThat(ret, is(1));
+
+    }
 }
