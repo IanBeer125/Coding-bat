@@ -73,4 +73,13 @@ public class Recursion1Test {
 
         assertThat(ret, is(2));
     }
+
+    @Test
+    public void shouldCount8() throws Exception {
+        int num = 88188;
+
+        int ret = underTest.count8(num);
+
+        assertThat(ret, is(4));
+    }
 }
