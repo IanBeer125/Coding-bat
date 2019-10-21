@@ -218,4 +218,13 @@ public class Recursion1Test {
 
         assertThat(ret, is("yxa"));
     }
+
+    @Test
+    public void shouldCountHi2() throws Exception {
+        String str = "hixhi";
+
+        int count = underTest.countHi2(str);
+
+        assertThat(count, is(1));
+    }
 }
