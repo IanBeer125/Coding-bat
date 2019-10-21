@@ -112,4 +112,22 @@ public class Recursion1Test {
         int ret = underTest.countHi(str);
         assertThat(ret, is(3));
     }
+
+    @Test
+    public void shouldChangeXY() throws Exception {
+        String str = "codex";
+
+        String ret = underTest.changeXY(str);
+
+        assertThat(ret, is("codey"));
+    }
+
+    @Test
+    public void shouldChangePI() throws Exception {
+        String str = "xpix";
+
+        String ret = underTest.changePi(str);
+
+        assertThat(ret, is("x3.14x"));
+    }
 }
