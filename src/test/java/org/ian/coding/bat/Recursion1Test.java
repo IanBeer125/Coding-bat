@@ -49,5 +49,13 @@ public class Recursion1Test {
         assertThat(ret, is(5));
     }
 
+    @Test
+    public void shouldTriangle() throws Exception {
+        int num = 3;
+        int ret = underTest.triangle(num);
+
+        assertThat(ret, is(6));
+    }
+
 
 }
