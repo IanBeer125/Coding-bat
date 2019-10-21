@@ -34,4 +34,12 @@ public class Functional1 {
     public List<Integer> math1(List<Integer> nums) {
         return nums.stream().map(i -> i + 1).map(i -> i * 10).collect(Collectors.toList());
     }
+
+    public List<Integer> rightDigit(List<Integer> nums) {
+        return nums.stream().map(i -> i % 10).collect(Collectors.toList());
+    }
+
+    public List<String> lower(List<String> strings) {
+
+    }
 }

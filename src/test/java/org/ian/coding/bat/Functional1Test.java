@@ -92,4 +92,20 @@ public class Functional1Test {
         assertThat(ret.get(2), is(50));
     }
 
+    @Test
+    public void shouldRightDigit() throws Exception {
+        List<Integer> nums = List.of(1,22,93);
+
+        List<Integer> ret = underTest.rightDigit(nums);
+
+        assertThat(ret.get(0), is(1));
+        assertThat(ret.get(1), is(2));
+        assertThat(ret.get(2), is(3));
+    }
+
+    @Test
+    public void shouldLower() throws Exception {
+
+    }
+
 }
