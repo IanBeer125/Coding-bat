@@ -64,4 +64,13 @@ public class Recursion1Test {
 
         assertThat(ret, is(9));
     }
+
+    @Test
+    public void shouldCount7() throws Exception {
+        int num = 717;
+
+        int ret = underTest.sumDigits(num);
+
+        assertThat(ret, is(2));
+    }
 }
