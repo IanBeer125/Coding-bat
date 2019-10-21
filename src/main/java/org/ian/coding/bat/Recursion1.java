@@ -138,5 +138,8 @@ public class Recursion1 {
         }
     }
 
+    public String noX(String str) {
+
+    }
 
 }

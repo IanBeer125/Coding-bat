@@ -130,4 +130,12 @@ public class Recursion1Test {
 
         assertThat(ret, is("x3.14x"));
     }
+
+    @Test
+    public void shouldNox() throws Exception {
+        String str = "xabxx";
+        String ret = underTest.noX(str);
+
+        assertThat(ret, is("ab"));
+    }
 }
