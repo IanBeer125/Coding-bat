@@ -48,4 +48,8 @@ public class Recursion1 {
         return rows *1 + triangle(rows -1);
     }
 
+    public int sumDigits(int n) {
+
+    }
+
 }
