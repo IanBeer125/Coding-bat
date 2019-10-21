@@ -181,4 +181,13 @@ public class Recursion1Test {
 
         assertThat(ret, is("hel*lo"));
     }
+
+    @Test
+    public void shouldEndX() throws Exception {
+        String str = "xerxs";
+
+        String ret = underTest.endX(str);
+
+        assertThat(ret, is("ersxx"));
+    }
 }
