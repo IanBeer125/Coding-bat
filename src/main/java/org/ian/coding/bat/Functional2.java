@@ -45,8 +45,7 @@ public class Functional2 {
     }
 
     public List<Integer> square56(List<Integer> nums) {
-        nums.replaceAll(i -> (int) Math.pow(i, 2) + 10);
-        return nums.stream()
+        return nums.stream().map(i -> i*i +10)
                 .filter(i -> i % 10 != 5 && i % 10 !=6)
                 .collect(Collectors.toList());
     }
