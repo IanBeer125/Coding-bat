@@ -145,4 +145,32 @@ public class Recursion1Test {
 
         assertTrue(underTest.array6(ints, 0));
     }
+
+    @Test
+    public void shouldArray11() throws Exception {
+        int[] nums = new int[]{11,11,2,3,4,6};
+        int index = 0;
+
+        int ret = underTest.array11(nums, index);
+
+        assertThat(ret, is(2));
+    }
+
+    @Test
+    public void shouldArray220() throws Exception {
+        int[] nums = new int[]{3,2,20,4};
+
+        assertTrue(underTest.array220(nums, 0));
+
+    }
+
+
+    @Test
+    public void shouldAllStar() throws Exception {
+        String str = "hello";
+
+        String ret = underTest.allStar(str);
+
+        assertThat(ret, is("h*e*l*l*o"));
+    }
 }

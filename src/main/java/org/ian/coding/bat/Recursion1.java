@@ -162,5 +162,32 @@ public class Recursion1 {
         }
     }
 
+    public int array11(int[] nums, int index) {
+        if (index >= nums.length) {
+            return 0;
+        }
+
+        if (nums[index] == 11) {
+            return 1 + array11(nums, index + 1);
+        } else {
+            return array11(nums, index + 1);
+        }
+    }
+
+    public boolean array220(int[] nums, int index) {
+        if (index >= nums.length -1) {
+            return false;
+        }
+
+        if (nums[index] * 10 == nums[index + 1]) {
+            return true;
+        } else {
+            return array220(nums, index + 1);
+        }
+    }
+
+    public String allStar(String str) {
+
+    }
 
 }
