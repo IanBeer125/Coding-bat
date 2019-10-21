@@ -31,5 +31,23 @@ public class Recursion1Test {
         assertThat(ret, is(6));
     }
 
+    @Test
+    public void shouldFibonacci() throws Exception {
+        int num = 3;
+
+        int ret = underTest.fibonacci(num);
+
+        assertThat(ret, is(2));
+    }
+    
+    @Test
+    public void shouldbunnyEars2() throws Exception {
+        int num = 2;
+        
+        int ret = underTest.bunnyEars2(num);
+        
+        assertThat(ret, is(5));
+    }
+
 
 }
